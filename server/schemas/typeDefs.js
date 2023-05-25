@@ -23,7 +23,7 @@ const typeDefs = gql`
 
   type Mutation {
     addStudent(name: String!, instrument: String!): Student
-    addAssigment(
+    addAssignment(
       name: String!
       date: String!
       details: String!
