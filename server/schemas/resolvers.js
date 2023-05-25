@@ -3,7 +3,7 @@ const { Student, Assignment } = require("../models");
 const resolvers = {
   Query: {
     students: async () => {
-      return await Student.find({}).populate("assignments");
+      return await Student.find({});
     },
     assignments: async () => {
       return await Assignment.find({});
@@ -11,8 +11,8 @@ const resolvers = {
   },
 
   Mutation: {
-    addStudent: async (parent, { name, instrument }) => {
-      return await Student.create({ name, instrument });
+    addStudent: async (parent, { firstName, lastName, instrument }) => {
+      return await Student.create({ firstName, lastName, instrument });
     },
     addAssignment: async (parent, { name, date, details, userId }) => {
       return await Assignment.create(name, date, details, userId);
