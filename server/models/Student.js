@@ -9,9 +9,12 @@ const studentSchema = new Schema({
     type: String,
     required: true,
   },
-  assignments: {
-    type: String,
-  },
+  assignments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Assignment",
+    },
+  ],
 });
 
 const Student = model("Student", studentSchema);
