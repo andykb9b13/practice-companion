@@ -1,0 +1,12 @@
+{
+  "name": "practice-companion",
+  "version": "1.0.0",
+  "description": "A virtual companion to assist a user when they are practicing music.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
